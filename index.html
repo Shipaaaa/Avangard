@@ -4,22 +4,39 @@
 		<meta charset="UTF-8">
 		<title>Авангард</title>
 		<link rel="stylesheet" href="css/style.css" media="all">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>	
+		<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-5.2.3-packed.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(function() {
+
+				$('#carousel ul').carouFredSel({
+					prev: '#prev',
+					next: '#next',
+					pagination: "#pager",
+					auto: true,
+					scroll: 1000,
+					pauseOnHover: true
+				});
+
+			});
+			</script>
 	</head>
 	<body>
 		<div class="header">
+			<div class="wrapperHead">
 				<a href="http://kultura.mos.ru"><div class="logodep"></div></a>
-			<a href="#"><div class="logo"></div></a>
+				<a href="#"><div class="logo"></div></a>
 			
-			<div class="info">
-				Подробная информация<br><b>8 495 393 80 55<br>ул. Генерала Белова, д. 18</b>
+				<div class="info">
+					Подробная информация<br>8 495 393 80 55<br>ул. Генерала Белова, д. 18
+				</div>
 			</div>
-
 		</div>
 		<div class="wrapper">
 			<div class="menu">
 				<ul id="nav">
 					<li>
-						<a href="#" style="margin-left: 80px;" >О НАС</a>
+						<a href="#" style="margin-left: 75px; margin-right: 75px;" >О НАС</a>
 						<ul>
 							<li><a href="#">О центре</a></li>
 							<li><a href="#">Администрация</a></li>
@@ -29,28 +46,24 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" style="margin-left: 80px;">МЕРОПРИЯТИЯ</a>
+						<a href="#" style="margin-left: 75px; margin-right: 75px;">МЕРОПРИЯТИЯ</a>
 						<ul>
-							<li><a href="#">Услуга один</a></li>
-							<li><a href="#">Услуга два</a></li>
-							<li><a href="#">Услуга три</a></li>
-							<li><a href="#">Услуга четыре</a></li>
+							<li><a href="#">Хореографическое направление</a></li>
+							<li><a href="#">Музыкально-инструментальное направление</a></li>
+							<li><a href="#">Вокально-хоровое направление</a></li>
+							<li><a href="#">Театральное направление</a></li>
+							<li><a href="#">ДПИ и ИЗО направление</a></li>
+							<li><a href="#">Раннее творческое и интелектуальное направление</a></li>
+							<li><a href="#">Оздоровительное направление</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#" style="margin-left: 80px;">КОЛЛЕКТИВЫ И СТУДИИ</a>
+						<a href="#" style="margin-left: 71px; margin-right: 70px;">КОЛЛЕКТИВЫ</a>
 						<ul>
-							<li><a href="#">Маленький продукт (первый)</a></li>
-							<li><a href="#">Маленький продукт (второй)</a></li>
-							<li><a href="#">Маленький продукт (третий)</a></li>
-							<li><a href="#">Маленький продукт (четвертый)</a></li>
-							<li><a href="#">Большой продукт (пятый)</a></li>
-							<li><a href="#">Большой продукт (шестой)</a></li>
-							<li><a href="#">Большой продукт (седьмой)</a></li>
-							<li><a href="#">Большой продукт (восьмой)</a></li>
-							<li><a href="#">Невообразимый продукт (девятый)</a></li>
-							<li><a href="#">Невообразимый продукт (десятый)</a></li>
-							<li><a href="#">Невообразимый продукт (одиннадцатый)</a></li>
+							<li><a href="#">Проекты</a></li>
+							<li><a href="#">Концерты/фестивали</a></li>
+							<li><a href="#">Выставки</a></li>
+							<li><a href="#">Фото и видео</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -64,7 +77,17 @@
 					Новости
 				</div>
 				<div class="poster">
-					Афиша
+					<div id="carousel">
+						<ul>
+							<li><img src="images/image1.jpg" alt="" /><a href="">Image1</a></li>
+							<li><img src="images/image2.jpg" alt="" /><a href="">Image2</a></li>
+							<li><img src="images/image3.jpg" alt="" /><a href="">Image3</a></li>				
+						</ul>
+						<div class="clearfix"></div>
+						<a id="prev" class="prev" href="#">&lt;</a>
+						<a id="next" class="next" href="#">&gt;</a>
+						<div id="pager" class="pager"></div>
+					</div>
 				</div>
 				<div class="ss">
 					Социальные сети
