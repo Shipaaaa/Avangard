@@ -20,6 +20,95 @@
 
 			});
 			</script>
+			<style type="text/css" media="all">
+				#carousel {
+					margin: 0 0 30px 30px;
+					width: 220px;
+					height: 320px;
+					position:relative;
+				}
+				#carousel ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					display: block;
+				}
+				#carousel li {
+					font-size: 40px;
+					color: #999;
+					text-align: center;
+					width: 220px;
+					height: 300px;
+					padding: 0;
+					margin: 0px;
+					display: block;
+					float: left;
+					/*background: transparent url('images/carousel_polaroid.png') no-repeat 0 0;*/
+					position:relative;
+				}
+
+				#carousel li img {
+					width: 248px;
+					height: 342px;
+					margin-top:0px;
+				}
+
+				#carousel li a {
+					width: 220px;
+					height: 300px;
+					position:absolute;
+					display:block;
+					top:14px;
+					left:16px;
+					/*background: transparent url('images/carousel_shine.png') no-repeat 0 0;*/
+					text-indent:-999em;
+				}			
+
+				.clearfix {
+					float: none;
+					clear: both;
+				}
+
+				#carousel .prev, #carousel .next {
+					margin-left: 10px;
+					width:11px;
+					height:21px;			
+					display:block;				
+					text-indent:-999em;
+					position:absolute;
+					top:150px;		
+				}
+				#carousel .prev {
+					left:-40px;
+					background: url('images/afisha/leftScroll.png') no-repeat;
+				}
+					#carousel .prev:hover {
+						left:-40px;
+					}			
+				#carousel .next {
+					background: url('images/afisha/rightScroll.png') no-repeat;
+					right:-30px;
+				}
+					#carousel .next:hover {
+						right:-30px;
+					}				
+				#carousel .pager {
+					margin-top: 10px;
+					text-align: center;
+				}
+				#carousel .pager a {
+					margin: 0 5px 0 0;
+					text-decoration: none;
+					display:inline-block;
+					width:9px;
+					height:9px;
+					background: url('images/afisha/pager.png') no-repeat;
+					text-indent:-999em;
+				}
+				#carousel .pager a.selected {
+					text-decoration: underline;
+					}
+		</style>
 	</head>
 	<body>
 		<div class="header">
@@ -36,8 +125,8 @@
 			<div class="menu">
 				<ul id="nav">
 					<li>
-						<a href="#" style="margin-left: 75px; margin-right: 75px;" >О НАС</a>
-						<ul>
+						<a href="#" style="margin-left: 95px; margin-right: 95px;" >О НАС</a>
+						<ul style="margin-left: 10px;">
 							<li><a href="#">О центре</a></li>
 							<li><a href="#">Администрация</a></li>
 							<li><a href="#">Отзывы</a></li>
@@ -46,20 +135,20 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" style="margin-left: 75px; margin-right: 75px;">МЕРОПРИЯТИЯ</a>
-						<ul>
-							<li><a href="#">Хореографическое направление</a></li>
-							<li><a href="#">Музыкально-инструментальное направление</a></li>
-							<li><a href="#">Вокально-хоровое направление</a></li>
-							<li><a href="#">Театральное направление</a></li>
-							<li><a href="#">ДПИ и ИЗО направление</a></li>
-							<li><a href="#">Раннее творческое и интелектуальное направление</a></li>
-							<li><a href="#">Оздоровительное направление</a></li>
+						<a href="#" style="margin-left: 100px; margin-right: 75px;">МЕРОПРИЯТИЯ</a>
+						<ul style="margin-left: 60px;">
+							<li><a href="#">Хореографическое <br>направление</a></li>
+							<li><a href="#">Музыкально-<br>инструментальное<br> направление</a></li>
+							<li><a href="#">Вокально-хоровое<br> направление</a></li>
+							<li><a href="#">Театральное <br>направление</a></li>
+							<li><a href="#">ДПИ и ИЗО <br>направление</a></li>
+							<li><a href="#">Раннее творческое и<br> интелектуальное<br> развитие детей</a></li>
+							<li><a href="#">Оздоровительное <br>направление</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#" style="margin-left: 71px; margin-right: 70px;">КОЛЛЕКТИВЫ</a>
-						<ul>
+						<a href="#" style="margin-left: 50px; margin-right: 50px;">КОЛЛЕКТИВЫ</a>
+						<ul style="margin-left: 0px;">
 							<li><a href="#">Проекты</a></li>
 							<li><a href="#">Концерты/фестивали</a></li>
 							<li><a href="#">Выставки</a></li>
@@ -79,9 +168,9 @@
 				<div class="poster">
 					<div id="carousel">
 						<ul>
-							<li><img src="images/image1.jpg" alt="" /><a href="">Image1</a></li>
-							<li><img src="images/image2.jpg" alt="" /><a href="">Image2</a></li>
-							<li><img src="images/image3.jpg" alt="" /><a href="">Image3</a></li>				
+							<li><img src="images/afisha/afisha.png" alt="" /><a href="">Image1</a></li>
+							<li><img src="images/afisha/afisha.png" alt="" /><a href="">Image2</a></li>
+							<li><img src="images/afisha/afisha.png" alt="" /><a href="">Image3</a></li>				
 						</ul>
 						<div class="clearfix"></div>
 						<a id="prev" class="prev" href="#">&lt;</a>
