@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Авангард</title>
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/style.css" media="all">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>	
 		<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-5.2.3-packed.js"></script>
@@ -18,13 +19,22 @@
 					pauseOnHover: true
 				});
 
+				$('#carousel1 ul').carouFredSel({
+					prev: '#prev1',
+					next: '#next1',
+					pagination: "#pager1",
+					auto: true,
+					scroll: 1000,
+					pauseOnHover: true
+				});
+
 			});
 			</script>
 			<style type="text/css" media="all">
 				#carousel {
-					margin: 0 0 30px 30px;
-					width: 220px;
-					height: 320px;
+					/*margin: 0 0 30px 30px;*/
+					width: 270px;
+					height: 370px;
 					position:relative;
 				}
 				#carousel ul {
@@ -37,8 +47,8 @@
 					font-size: 40px;
 					color: #999;
 					text-align: center;
-					width: 220px;
-					height: 300px;
+					width: 270px;
+					height: 370px;
 					padding: 0;
 					margin: 0px;
 					display: block;
@@ -48,50 +58,100 @@
 				}
 
 				#carousel li img {
-					width: 248px;
-					height: 342px;
+					width: 270px;
+					height: 370px;
 					margin-top:0px;
 				}
 
 				#carousel li a {
-					width: 220px;
-					height: 300px;
+					width: 270px;
+					height: 370px;
 					position:absolute;
 					display:block;
 					top:14px;
 					left:16px;
 					/*background: transparent url('images/carousel_shine.png') no-repeat 0 0;*/
 					text-indent:-999em;
-				}			
+				}	
+				/*----------------------Партнёры--------------------*/
+				#carousel1 {
+					margin: 0 0 30px 30px;
+					width: 800px;
+					height: 55px;
+					position:relative;
+				}
+
+				#carousel1 ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					display: block;
+				}
+				#carousel1 li {
+					font-size: 40px;
+					color: #999;
+					text-align: center;
+					width: 160px;
+					height: 55px;
+					padding: 0;
+					margin: 0px;
+					display: block;
+					float: left;
+					/*background: transparent url('images/carousel_polaroid.png') no-repeat 0 0;*/
+					position:relative;
+				}
+
+				#carousel1 li img {
+					width: 160px;
+					height: 55px;
+					margin-top:0px;
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+
+				#carousel1 li a {
+					width: 160px;
+					height: 55px;
+					margin-left: 20px;
+					margin-right: 20px;
+					position:absolute;
+					display:block;
+					top:14px;
+					left:16px;
+					/*background: transparent url('images/carousel_shine.png') no-repeat 0 0;*/
+					text-indent:-999em;
+				}					
 
 				.clearfix {
 					float: none;
 					clear: both;
 				}
 
-				#carousel .prev, #carousel .next {
+				#carousel1 .prev, #carousel1 .next {
 					margin-left: 10px;
 					width:11px;
 					height:21px;			
 					display:block;				
 					text-indent:-999em;
 					position:absolute;
-					top:150px;		
+					top:20px;		
 				}
-				#carousel .prev {
+				#carousel1 .prev {
 					left:-40px;
 					background: url('images/afisha/leftScroll.png') no-repeat;
 				}
-					#carousel .prev:hover {
+					#carousel1 .prev:hover {
 						left:-40px;
 					}			
-				#carousel .next {
+				#carousel1 .next {
 					background: url('images/afisha/rightScroll.png') no-repeat;
 					right:-30px;
 				}
-					#carousel .next:hover {
-						right:-30px;
-					}				
+
+				#carousel1 .next:hover {
+					right:-30px;
+				}
+
 				#carousel .pager {
 					margin-top: 10px;
 					text-align: center;
@@ -119,6 +179,10 @@
 				<div class="info">
 					Подробная информация<br>8 495 393 80 55<br>ул. Генерала Белова, д. 18
 				</div>
+				<div class="searchf" >
+					<form class="form-search" method="get" action="/search" target="_blank">
+					<input type="text" name="q" placeholder="поиск" value=""/></form>
+				</div>
 			</div>
 		</div>
 		<div class="wrapper">
@@ -139,36 +203,40 @@
 					<li>
 						<a href="#" style="margin-left: 100px; margin-right: 75px;">МЕРОПРИЯТИЯ</a>
 						<ul style="margin-left: 60px;">
-							<li><a href="#">Хореографическое <br>творчество</a></li>
-							<li><a href="#">Театральное <br>творчество</a></li>
-							<li><a href="#">ДПИ и ИЗО <br>творчество</a></li>
-							<li><a href="#">Вокально-хоровое<br> творчество</a></li>
-							<li><a href="#">Музыкально-<br>инструментальное<br> творчество</a></li>
-							<li><a href="#">Раннее творческое и<br> интелектуальное<br> развитие детей</a></li>
-							<li><a href="#">Спрортивно-<br>оздоровительное <br>направление</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#" style="margin-left: 50px; margin-right: 50px;">КОЛЛЕКТИВЫ</a>
-						<ul style="margin-left: 0px;">
 							<li><a href="#">Проекты</a></li>
 							<li><a href="#">Концерты и<br>фестивали</a></li>
 							<li><a href="#">Выставки</a></li>
 							<li><a href="#">Фото и видео</a></li>
 						</ul>
 					</li>
+					<li>
+						<a href="#" style="margin-left: 50px; margin-right: 50px;">КОЛЛЕКТИВЫ</a>
+						<ul style="margin-left: 0px;">
+							<li><a href="#">Хореографическое <br>творчество</a></li>
+							<li><a href="#">Театральное <br>творчество</a></li>
+							<li><a href="#">ДПИ и ИЗО <br>творчество</a></li>
+							<li><a href="#">Вокально-хоровое<br> творчество</a></li>
+							<li><a href="#">Музыкально-<br>инструментальное<br> творчество</a></li>
+							<li><a href="#">Раннее творческое и<br> интеллектуальное<br> развитие детей</a></li>
+							<li><a href="#">Спрортивно-<br>оздоровительное <br>направление</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="line"></div>
 			<div class="content">
-				<div class="inwiget">
-				<iframe src='/inwidget/index.php' scrolling='no' frameborder='no' style='border:none;width:260px;height:330px;overflow:hidden;'></iframe>
+				<div class="TimePadeWidget">
+					<div class="square"></div>СОБЫТИЯ
+					<hr>
+					<script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="11626" data-timepad-widget-v2="event_list3" src="https://timepad.ru/js/tpwf/loader/min/loader.js"></script>
 				</div>
 				<div class="news">
 					<div class="square"></div>НОВОСТИ
 					<hr>
 				</div>
 				<div class="poster">
+				<div class="square"></div>АФИША
+					<hr>
 					<div id="carousel">
 						<ul>
 							<li><img src="images/afisha/afisha.png" alt="" /><a href="">Image1</a></li>
@@ -176,8 +244,8 @@
 							<li><img src="images/afisha/afisha.png" alt="" /><a href="">Image3</a></li>				
 						</ul>
 						<div class="clearfix"></div>
-						<a id="prev" class="prev" href="#">&lt;</a>
-						<a id="next" class="next" href="#">&gt;</a>
+						<!-- <a id="prev" class="prev" href="#">&lt;</a>
+						<a id="next" class="next" href="#">&gt;</a> -->
 						<div id="pager" class="pager"></div>
 					</div>
 				</div>
@@ -193,18 +261,44 @@
 				        </TR>
 					</TABLE>
 				</div>
-				<div class="TimePadeWidget">
-					<div class="square"></div>СОБЫТИЯ
-					<hr>
-					<script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="11626" data-timepad-widget-v2="event_list3" src="https://timepad.ru/js/tpwf/loader/min/loader.js"></script>
+				<div class="inwiget">
+					<iframe src='/inwidget/index.php' scrolling='no' frameborder='no' style='border:none;width:260px;height:330px;overflow:hidden;'></iframe>
 				</div>
 				<div class="timetable">
-					Расписание
+				<TABLE>
+				        <TR>
+		                	<TD><a href=""><img src="images/ico1.png"/></a></TD> <TD class="timetableBG"><a href="">РАСПИСАНИЕ ЗАНЯТИЙ</a></TD>
+				        </TR>
+				         <TR>
+		                	<TD><a href=""><img src="images/ico2.png"/></a></TD> <TD class="timetableBG"><a href="">ПРЕЙСКУРАНТ ЦЕН</a></TD>
+				        </TR>
+				         <TR>
+		                	<TD><a href=""><img src="images/ico3.png"/></a></TD> <TD class="timetableBG"><a href="">ОН-ЛАЙН ЗАПИСЬ</a></TD>
+				        </TR>
+					</TABLE>
 				</div>
-			</div>
-			<div class="footer">
-				<div class="square"></div>ПАРТНЕРЫ
-				<hr>
+				<div class="partners">
+					<div class="square"></div>ПАРТНЕРЫ
+					<hr>
+					<div id="carousel1">
+						<ul>
+							<li><img src="images/partners/logos.png" alt="" /><a href="http://kultura.mos.ru/">Image1</a></li>
+							<li><img src="images/partners/uao.png" alt="" /><a href="http://uao.mos.ru/">Image1</a></li>
+							<li><img src="images/partners/ugorexovo.png" alt="" /><a href="http://uao.mos.ru/">Image1</a></li>
+							<li><img src="images/partners/etnomir.png" alt="" /><a href="http://ethnomir.ru/">Image1</a></li>
+							<li><img src="images/partners/logo_bor.png" alt="" /><a href="http://www.borisovskie.park­kuzminki.ru/">Image1</a></li>
+							<li><img src="images/partners/orexovo_borisovo_sev.png" alt="" /><a href="http://sevorehovo-borisovo.mos.ru/">Image1</a></li>
+							<li><img src="images/partners/mosart.png" alt="" /><a href="http://mosartagency.com/">Image1</a></li>
+							<li><img src="images/partners/danceTH.png" alt="" /><a href="http://dtsansara.ucoz.ru/">Image1</a></li>
+							<li><img src="images/partners/activeGR.png" alt="" /><a href="http://ag.mos.ru/">Image1</a></li>
+							<li><img src="images/partners/mechta.png" alt="" /><a href="http://teatr-mechta.ru/">Image1</a></li>		
+						</ul>
+						<div class="clearfix"></div>
+						<a id="prev1" class="prev" href="#">&lt;</a>
+						<a id="next1" class="next" href="#">&gt;</a>
+						<!-- <div id="pager1" class="pager"></div> -->
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

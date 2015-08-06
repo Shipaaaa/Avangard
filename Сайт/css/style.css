@@ -40,7 +40,8 @@ abbr,acronym{
 
 body {
 	font-family:Arial,Verdana,sans-serif;
-	background: #F7F7F7;
+	background:  url(../images/BG.png) no-repeat;
+	background-size: 100%;
 	color: #000;
 	line-height: 1;
 }
@@ -92,7 +93,7 @@ html, body{height: 100%;}
     text-align: right;
     width: 300px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 0px;
     font-family: 'Days';
     color: #fff;
@@ -114,11 +115,11 @@ html, body{height: 100%;}
 
 .inwiget{
 	float:left;
-	background: #CDCDCD;
+	/*background: #CDCDCD;*/
 	width: 265px;
 	height: 335px;
-	margin-top: 30px;
-	margin-left: 30px;
+	margin-top: 40px;
+	margin-left: 50px;
 }
 
 .news{
@@ -137,18 +138,23 @@ html, body{height: 100%;}
 
 .poster{
 	float:left;
-	width: 280px;
-	height: 335px;
+	width: 270px;
+	height: 435px;
 	/*background:#CF3B87;*/
 	margin-top: 30px;
 	margin-left: 30px;
+	font-size: 18px;
+	font-family: "Arial Narrow";
+	color: rgb(177, 55, 117);
+	line-height: 2.222;
+	text-align: left;
 }
 
 .ss{
 	float:left;
 	width: 265px;
 	height: 235px;
-	/*background:#79C0DC;*/
+	background:#FFF;
 	color: #B13775;
 	margin-top: 30px;
 	margin-left: 30px;
@@ -186,9 +192,8 @@ html, body{height: 100%;}
 
 .TimePadeWidget{
 	float:left;
-	width: 300px;
-	height: 235px;
-	/*background:#1D6337;*/
+	width: 270px;
+	height: 370px; 
 	margin-top: 30px;
 	margin-left: 30px;
 	font-size: 18px;
@@ -200,18 +205,37 @@ html, body{height: 100%;}
 
 .timetable{
 	float:left;
-	width: 220px;
+	width: 315px;
 	height: 235px;
-	background:#9F386F;
-	margin-top: 30px;
-	margin-left: 60px;
+	/*background:#9F386F;*/
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
-.footer{
+.timetable table{
+	border-collapse: separate;
+	border-spacing: 10px;
+    margin: auto;
+    border: 10px solid white;
+}
+
+.timetable a{
+	margin-left: 10px;
+	text-decoration:none;
+	color: #9b9ba0;
+	vertical-align: middle;
+	text-align: justify; 
+}
+
+.timetableBG{
+	background: url(../images/icoBG.png);
+}
+
+.partners{
 	clear: both;
 	width: 94%;
 	margin: auto;
-	height: 300px;
+	height: 150px;
 	font-size: 18px;
 	font-family: "Arial Narrow";
 	color: rgb(177, 55, 117);
@@ -219,6 +243,52 @@ html, body{height: 100%;}
 	text-align: left;
 }
 
+/*------------------------------------*\
+
+	ПОИСК ПО САЙТУ
+
+\*------------------------------------*/
+
+.searchf {
+   float: right;
+    text-align: right;
+    width: 198px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 0px;
+    font-family: 'Days';
+    color: #fff;
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.form-search {
+  display: inline-block;
+}
+
+.form-search input {
+  width: 198px;
+  height: 30px;
+  /*line-height: 26px;*/
+  font: 13px Helvetica, Arial, sans-serif; 
+  color:#6E7074;
+  text-shadow: 0 1px 0 #FFF;
+/*  -moz-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;  */
+  padding: 0 0 0 6px; 
+  background: url(../images/search.png);
+  background-repeat: no-repeat;
+  border: 0px solid;
+  /*border-radius: 3px;*/
+}
+
+.form-search input:focus {
+  box-shadow: inset 0 1px 1px #46575b, 0 1px 0 #FFF;
+  color: #25464D;
+}
 
 /*------------------------------------*\
 	НАВИГАЦИЯ
@@ -251,7 +321,7 @@ html, body{height: 100%;}
 }
 #nav li a:hover{
 	color:#000;
-	/*background:#EAEAEA;*/
+	background:#DDE0F7;
 	/*background:rgba(107,12,54,0.75); /* Выглядит полупрозрачным */*/
 	text-decoration:underline;
 }
@@ -275,9 +345,10 @@ html, body{height: 100%;}
 	
 }
 #nav ul a{
+	font-size:1em;
 	padding-left: 50px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
 	display:block;
 	color:#2F3638;
@@ -297,7 +368,7 @@ html, body{height: 100%;}
 	-webkit-transition:-webkit-transform 0.075s linear;
 }
 #nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
-	background:#E7E8F1;
+	background:#DDE0F7;
 	/*background:rgba(242,244,243,0.75); /* Будет полупрозрачным */*/
 	text-decoration:underline;
 	-moz-transform:scale(1.05);
