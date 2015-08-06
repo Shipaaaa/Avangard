@@ -123,11 +123,16 @@ html, body{height: 100%;}
 
 .news{
 	float:left;
-	width: 265px;
+	width: 300px;
 	height: 335px;
-	background:#CF3B87;
+	/*background:#CF3B87;*/
 	margin-top: 30px;
 	margin-left: 30px;
+	font-size: 18px;
+	font-family: "Arial Narrow";
+	color: rgb(177, 55, 117);
+	line-height: 2.222;
+	text-align: left;
 }
 
 .poster{
@@ -142,36 +147,76 @@ html, body{height: 100%;}
 .ss{
 	float:left;
 	width: 265px;
-	height: 335px;
-	background:#79C0DC;
+	height: 235px;
+	/*background:#79C0DC;*/
+	color: #B13775;
 	margin-top: 30px;
 	margin-left: 30px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-family: "Arial Narrow";
+	color: rgb(177, 55, 117);
+	line-height: 2.222;
+	text-align: left;
+}
+
+.tableSS{
+	margin: auto;
+	margin-top: 0px;
+	height: 56;
+}
+
+.tableSS td{
+	 border: 10px solid white;
+	 height: 0;
+}
+
+.tableSSTR img{
+	 height: 56px;
+}
+
+.square{
+	margin-top: 10px;
+	margin-right: 5px;
+	float:left;
+	width: 20px;
+	height: 20px;
+	background: #DCD5EF;
 }
 
 .TimePadeWidget{
 	float:left;
-	width: 265px;
-	height: 335px;
-	background:#1D6337;
+	width: 300px;
+	height: 235px;
+	/*background:#1D6337;*/
 	margin-top: 30px;
 	margin-left: 30px;
+	font-size: 18px;
+	font-family: "Arial Narrow";
+	color: rgb(177, 55, 117);
+	line-height: 2.222;
+	text-align: left;
 }
 
 .timetable{
 	float:left;
-	width: 265px;
-	height: 335px;
+	width: 220px;
+	height: 235px;
 	background:#9F386F;
 	margin-top: 30px;
-	margin-left: 30px;
+	margin-left: 60px;
 }
 
 .footer{
-	margin-top: 30px;
-	float:left;
-	width: 100%;
-	height: 150px;
-	background:#0E91C9;
+	clear: both;
+	width: 94%;
+	margin: auto;
+	height: 300px;
+	font-size: 18px;
+	font-family: "Arial Narrow";
+	color: rgb(177, 55, 117);
+	line-height: 2.222;
+	text-align: left;
 }
 
 
@@ -180,7 +225,7 @@ html, body{height: 100%;}
 \*------------------------------------*/
 #nav{
 	width:100%;
-	list-style:none;
+	/*list-style:none;*/
 	margin: auto;
 	
 }
@@ -190,6 +235,7 @@ html, body{height: 100%;}
 	position:relative;
 	display:block;
 }
+
 #nav li a{
 	vertical-align: middle;
 	text-align: justify; 
@@ -212,9 +258,10 @@ html, body{height: 100%;}
 
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
 #nav ul{
+	/*list-style-image: url(..images/menuClick.png);*/
 	background: "#FFF";
 	z-index: 2;
-	list-style:none;
+	/*list-style:none;*/
 	position:absolute;
 	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
 	opacity:0; /* Устнавливаем начальное состояние прозрачности */
@@ -228,11 +275,13 @@ html, body{height: 100%;}
 	
 }
 #nav ul a{
-	vertical-align: middle;
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
 	display:block;
 	color:#2F3638;
-	height: 70px;
+	height: auto;
 }
 #nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
 	left:0; /* Приносим его обратно на экран, когда нужно */
