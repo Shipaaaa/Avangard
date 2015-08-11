@@ -127,7 +127,7 @@ html, body{height: 100%;}
 	width: 300px;
 	height: 335px;
 	/*background:#CF3B87;*/
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-left: 30px;
 	font-size: 18px;
 	font-family: "Arial Narrow";
@@ -141,7 +141,7 @@ html, body{height: 100%;}
 	width: 270px;
 	height: 435px;
 	/*background:#CF3B87;*/
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-left: 30px;
 	font-size: 18px;
 	font-family: "Arial Narrow";
@@ -194,7 +194,7 @@ html, body{height: 100%;}
 	float:left;
 	width: 270px;
 	height: 370px; 
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-left: 30px;
 	font-size: 18px;
 	font-family: "Arial Narrow";
@@ -228,6 +228,7 @@ html, body{height: 100%;}
 }
 
 .timetableBG{
+	width: 100%;
 	background: url(../images/icoBG.png);
 }
 
@@ -295,19 +296,19 @@ html, body{height: 100%;}
 \*------------------------------------*/
 #nav{
 	width:100%;
-	/*list-style:none;*/
-	margin: auto;
+	list-style:none;
+	/*margin: auto;*/
 	
 }
 #nav li{	
 	float:left;
 	margin-top:10px;
 	position:relative;
-	display:block;
+	/*display:block;*/
 }
 
 #nav li a{
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	text-align: justify; 
 	display:table-cell; 
 	display:block;
@@ -328,8 +329,9 @@ html, body{height: 100%;}
 
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
 #nav ul{
-	/*list-style-image: url(..images/menuClick.png);*/
-	background: "#FFF";
+	list-style-image: url(images/menuClick.png);
+	list-style-position: inside;
+	background: #FFF;
 	z-index: 2;
 	/*list-style:none;*/
 	position:absolute;
@@ -341,14 +343,15 @@ html, body{height: 100%;}
 	padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
 	float:none;
 	width: 280px;
+	margin-top:0px;
 	background:#E7E8F1;
 	
 }
 #nav ul a{
 	font-size:1em;
-	padding-left: 50px;
+/*	padding-left: 50px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 10px;*/
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
 	display:block;
 	color:#2F3638;
@@ -359,11 +362,12 @@ html, body{height: 100%;}
 	opacity:1; /* Делаем непрозрачным */
 }
 #nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
-	/*background:#E7E8F1;*/
+	/*background:#DDE0F7;*/
 	/*background:rgba(242,244,243,0.75); /* Будет полупрозрачным */*/
 	text-decoration:underline;
 }
 #nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+	/*background:#DDE0F7;*/
 	text-decoration:none;
 	-webkit-transition:-webkit-transform 0.075s linear;
 }
