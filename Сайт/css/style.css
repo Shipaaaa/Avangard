@@ -51,10 +51,21 @@ body {
 
 html, body{height: 100%;}
 
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 .wrapper{
 	background: #FFF;
 	width: 960px;
-	min-height: 100%;
+	/*min-height: 100%;*/
 	margin: auto;
 }
 
@@ -96,18 +107,19 @@ html, body{height: 100%;}
     text-align: right;
     width: 300px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-right: 0px;
-    font-family: 'Days';
+    font-family: 'MyriadProRegular';
     color: #fff;
     font-size: 20px;
     text-transform: none;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 .menu{
 	height: 50px;
 	background:#F3F3F3;
+	font-family: 'Calibri';
 }
 
 .line{
@@ -261,7 +273,7 @@ html, body{height: 100%;}
 
 \*------------------------------------*/
 
-.searchf {
+/*.searchf {
    float: right;
     text-align: right;
     width: 198px;
@@ -283,23 +295,68 @@ html, body{height: 100%;}
   width: 198px;
   height: 29px;
   /*line-height: 26px;*/
-  font: 13px Helvetica, Arial, sans-serif; 
+  /*font: 13px Helvetica, Arial, sans-serif; 
   color:#6E7074;
-  text-shadow: 0 1px 0 #FFF;
+  text-shadow: 0 1px 0 #FFF;*/
 /*  -moz-transition: all .2s ease-out;
   -webkit-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;  */
-  padding: 0 0 0 6px; 
+ /* padding: 0 0 0 6px; 
   background: url(../images/search.png);
   background-repeat: no-repeat;
-  border: 0px solid;
+  border: 0px solid;*/
   /*border-radius: 3px;*/
-}
+/*}*/
 
-.form-search input:focus {
+/*.form-search input:focus {
   box-shadow: inset 0 1px 1px #46575b, 0 1px 0 #FFF;
   color: #25464D;
+}
+*/
+
+/*------------------------------------*\
+	Новости
+\*------------------------------------*/
+.jp-container{
+    width:300px;
+    margin: 10px 0 0 0;
+    height: 369px;
+    position:relative;
+    background:#fff;
+    border:1px solid #D8DFEA;
+	float:left;
+}
+.jp-container a{
+    padding:15px 20px;
+    display:block;
+    line-height:20px;
+    background-color: #fff;
+    border-bottom:1px solid #F2F4F8;
+    border-top:1px solid #D8DFEA;
+}
+.jp-container a:first-child{
+    border-top:none;
+}
+.jp-container a:last-child{
+    border-bottom:none;
+}
+.jp-container a:hover{
+   background:#ECEFF5;
+   border-bottom-color:#ECEFF5;
+}
+.jp-container a h3{ 
+    font-size:14px;
+    font-weight:bold;
+    padding:2px 0 5px 0;
+	text-transform:uppercase;
+}
+.jp-container a img{
+    float:left;
+    margin:5px 10px 0px 0px;
+    padding:3px;
+    background:#fff;
+    border:1px solid #D8DFEA;
 }
 
 /*------------------------------------*\
@@ -313,7 +370,7 @@ html, body{height: 100%;}
 }
 #nav li{	
 	float:left;
-	margin-top:10px;
+	/*margin-top:10px;*/
 	position:relative;
 	/*display:block;*/
 }
@@ -324,20 +381,30 @@ html, body{height: 100%;}
 	display:table-cell; 
 	display:block;
 	font-size:1.5em;
-	padding:5px;
 	color:#86858A;
 	text-decoration:none;
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	border-radius:2px;
 }
+
 #nav li a:hover{
 	color:#000;
 	background:#DDE0F7;
-	/*background:rgba(107,12,54,0.75); /* Выглядит полупрозрачным */*/
-	text-decoration:underline;
+	/*text-decoration:underline;*/
 }
 
+#menu_a{
+	margin-left: 14px; 
+	padding: 10px 120px 10px 110px;
+}
+#menu_b{
+	margin-left: -8px;
+    padding: 10px 57px 10px 55px;
+}
+#menu_c{
+    padding: 10px 65px 10px 62px;
+}
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
 #nav ul{
 /*	list-style-image: url("/images/menuClick.png");
@@ -354,27 +421,30 @@ html, body{height: 100%;}
 	z-index: 5;
 	padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
 	float:none;
-	width: 290px;
+	width: 320px;
 	margin-top:1px;
 }
 #nav ul a{
+	font-family: 'MyriadProRegular';
 	font-size:1em;
 	padding-left: 50px;
-	padding-top: 25px;
+	padding-top: 30px;
 	padding-bottom: 25px;
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
 	display:block;
 	color:#2F3638;
 	height: auto;
-	background: url(../images/menuBG.png) no-repeat;
+	background: url(../images/menuBG.png) no-repeat !important;
+	background-size: 320px auto !important;
 }
 #nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
 	left:0; /* Приносим его обратно на экран, когда нужно */
 	opacity:1; /* Делаем непрозрачным */
 }
 #nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
-	/*background:rgba(242,244,243,0.75); /* Будет полупрозрачным */*/
-	text-decoration:underline;
+	color:#000;
+	background:#DDE0F7;
+	/*text-decoration:underline;*/
 }
 #nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
 	text-decoration:none;
@@ -382,6 +452,7 @@ html, body{height: 100%;}
 }
 #nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
 	background: url(../images/menuBGClick.png) no-repeat;
+	background-size: 320px auto;
 	/*background:rgba(242,244,243,0.75); /* Будет полупрозрачным */*/
 	text-decoration:underline;
 	-moz-transform:scale(1.05);
