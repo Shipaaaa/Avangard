@@ -35,7 +35,7 @@
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <table><tr><td>
-<p class=boxmenu><a class=menu href="index.php">Вернуться в администрирование новоcтей</a></p>
+<p class=boxmenu><a class=menu href="admin_main.php">Вернуться в администрирование новоcтей</a></p>
 </td></tr></table>
 <form name=form enctype='multipart/form-data' action=<?php echo $action; ?> method=post>
 <table cellpadding="0" cellspacing="6">

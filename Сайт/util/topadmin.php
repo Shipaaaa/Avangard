@@ -19,9 +19,10 @@
     <tr align="center">
         <td width="10%">&nbsp;</td>
         <td><p><a href="../index.php" class=link title="Вернуться на головную страницу сайта" >Вернуться на сайт</b></a></td>
-        <td width="50">&nbsp;</td>
-        <td><p><a href="../admin/index.php" class=link title="Вернуться на страницу администрированию сайта">Администрирование сайта</b></a></td>
-        <td width="50">&nbsp;</td>
+        <td width="900">&nbsp;</td>
+
+        <td><p><a href="admin_logout.php" class=link title="Выйти из панели администрированию сайта">Выйти</a></td>
+        <td width="10%">&nbsp;</td>
     </tr>
 </table>
 <table border="0" cellpadding="0" cellspacing="20" >

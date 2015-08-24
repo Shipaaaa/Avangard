@@ -3,7 +3,7 @@
 <? include('header.php'); ?>	
 	<body>
 	<? include('menu.php'); ?>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<!-- the mousewheel plugin -->
 	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 	<!-- the jScrollPane script -->
@@ -327,7 +327,7 @@
 					<hr>
 					<TABLE class="tableSS">
 				        <TR class="tableSSTR">
-		                	<TD><a href="https://www.facebook.com/cki.avangard"><img src="images/icon/FB.png"/></a></TD> <TD><a href="http://vk.com/centr_avangard"><img src="images/icon/VK.png"/></a></TD> <TD><a href="https://twitter.com/Centr_Avangard"><img src="images/icon/TW.png"/></a></TD><TD><a href=""><img src="images/icon/SK.png"/></a></TD>
+		                	<TD><a href="https://www.facebook.com/cki.avangard"><img src="images/icon/FB.png"/></a></TD> <TD><a href="http://vk.com/centr_avangard"><img src="images/icon/VK.png"/></a></TD> <TD><a href="https://twitter.com/Centr_Avangard"><img src="images/icon/TW.png"/></a></TD><TD><a href="http://ru.linkedin.com/in/ckiavangard"><img src="images/icon/LN.png"/></a></TD>
 				        </TR>
 				        <TR class="tableSSTR">
 		                	<TD><a href="http://ok.ru/centravangard"><img src="images/icon/OD.png"/></a></TD> <TD><a href="https://www.youtube.com/channel/UC6mqeV2vtMqVLoQ0coZY81A/videos"><img src="images/icon/YT.png"/></a></TD> <TD><a href="https://plus.google.com/u/0/112774963304481606959/posts"><img src="images/icon/GP.png"/></a></TD><TD><a href="https://instagram.com/centr_avangard/"><img src="images/icon/IN.png"/></a></TD>
@@ -394,8 +394,8 @@
 					<hr>
 					<div id="carousel">
 						<ul>
-							<li><img src="images/afisha/afisha.png"/></li>
-							<li><img src="images/afisha/day_jam.png"/></li>				
+							<li><img src="images/afisha/afisha.png"/><a class="example-image-link" href="images/afisha/afisha.png" data-lightbox="example-set"></a></li>
+							<li><img src="images/afisha/day_jam.png"/><a class="example-image-link" href="images/afisha/day_jam.png" data-lightbox="example-set"></a></li>			
 						</ul>
 						<div class="clearfix"></div>
 						<!-- <a id="prev" class="prev" href="#">&lt;</a>
@@ -409,6 +409,17 @@
 					<script type="text/javascript" defer="defer" charset="UTF-8" data-timepad-customized="11626" data-timepad-widget-v2="event_list3" src="https://timepad.ru/js/tpwf/loader/min/loader.js"></script>
 				</div>
 				<div class="inwiget">
+				<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script> 
+					<div id="SkypeButton_Call_ckiavangard_1">
+					  <script type="text/javascript">
+					    Skype.ui({
+					      "name": "chat",
+					      "element": "SkypeButton_Call_ckiavangard_1",
+					      "participants": ["ckiavangard"],
+					      "imageSize": 32
+					    });
+					  </script>
+					</div>
 				</div>
 				<div class="timetable">
 				<TABLE>

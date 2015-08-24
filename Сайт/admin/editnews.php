@@ -114,7 +114,7 @@
                             $path_image
                             hide = '$showhide'
             WHERE id_news=".$_POST['id_news'];
-  if(mysql_query($query)) header("Location: index.php?page=".$_GET['page']);
+  if(mysql_query($query)) header("Location: admin_main.php?page=".$_GET['page']);
   else links("Ошибка при редактировании новостей (база данных)");
 
   // Вспомогательная функция для вывода ссылок возврата
@@ -122,7 +122,7 @@
   {
     echo "<p>".$msg."</p>";
     echo "<p><a href=# onClick='history.back()'>Вернуться к правке новостей</a></p>";
-    echo "<p><a href=index.php>Администрирование новостей</a></p>";
+    echo "<p><a href=admin_main.php>Администрирование новостей</a></p>";
     exit();
   }
 ?>

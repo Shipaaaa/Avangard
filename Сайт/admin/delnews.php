@@ -19,6 +19,6 @@
   }
   // Формируем и выполянем SQL-запрос на удаление записи в таблице news  
   $query = "DELETE FROM news WHERE id_news=".$_GET['id_news'];
-  if(mysql_query($query)) header("Location: index.php?page=".$_GET['page']);
+  if(mysql_query($query)) header("Location: admin_main.php?page=".$_GET['page']);
   else puterror("Ошибка при обращении к блоку новостей");
 ?>

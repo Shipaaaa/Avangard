@@ -1,4 +1,9 @@
 <?php
+session_start ();
+if (!$_SESSION['admin']) die ( Запрещено );
+?>
+
+<?php
   Error_Reporting(E_ALL & ~E_NOTICE); 
 
   // Устанавливаем соединение с базой данных

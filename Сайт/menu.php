@@ -4,9 +4,9 @@
 		<a href="/"><div class="logo"></div></a>
 	
 		<div class="info">
-			8 (495) 393 82 78<br>
 			8 (495) 393 80 55<br>
-			8 (495) 393 80 54
+			8 (495) 393 80 54<br>
+			8 (495) 393 82 78
 		</div>
 		<!-- <div class="searchf" >
 			<form class="form-search" method="get" action="/search" target="_blank">
@@ -35,7 +35,7 @@
 					<li><a href="/pages/projects.php">Проекты</a></li>
 					<li><a href="/pages/concerts_fistevali.php">Концерты и фестивали</a></li>
 					<li><a href="/pages/exhibitions.php">Выставки</a></li>
-					<li><a href="/pages/photo_video.php">Фото и видео</a></li>
+					<!-- <li><a href="/pages/photo_video.php">Фото и видео</a></li> -->
 				</ul>
 			</li>
 			<li>
