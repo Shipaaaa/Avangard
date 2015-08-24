@@ -17,7 +17,7 @@ h6{}
 	.zagtable{font-size: 13px; color: #000000; font-weight: bold}
 	.bodytable{background-color: #F0F6F6}
 	.bodytablecat{background-color: #FAF7C8}	
-	.help{color: #434565; font-size: 80%}
+	.help{color: #434565; font-size: 80%; width:600px;}
 	.zagtable{font-size: 11px; color: #000000; text-align: center}
 	.link{color: #10557B;}
 	.menu{color: #A90303; font-size: 13px}

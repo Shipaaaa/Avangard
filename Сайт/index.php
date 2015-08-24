@@ -361,7 +361,11 @@
 						  else puterror("Ошибка при обращении к блоку новостей");
 						  // Запрашиваем все видимые новости, т.е. те, у которых в базе данных hide='show',
 						  // если это поле будет равно 'hide', новость не будет отображаться на странице
-						  $query = "SELECT * FROM news 
+						  $query = "SELECT id_news,
+                                 name,
+                                 body,
+                                 DATE_FORMAT(putdate,'%d.%m.%Y') as putdate_format,
+                                 hide FROM news 
 						            WHERE hide='show' AND putdate <= NOW()
 						            ORDER BY putdate DESC
 						            LIMIT $pnumber";
@@ -372,7 +376,7 @@
 						    while($news = mysql_fetch_array($new))
 						    {
 						      // Выводим заголовок новости
-						      echo "<p class=newsblockzag><b>".$news['name']."</b></p>";
+						      echo "<p class='newsblockzag'><b>".$news['name']."</b>"."&nbsp;&nbsp;<em class=datanewsMain>".$news['putdate_format']."</em></p>";
 						      // Формируем анонс
 						      // Переменная $numchar содержит примерное
 						      // количество символов в анонсе
