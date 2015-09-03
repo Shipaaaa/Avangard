@@ -3,14 +3,17 @@
   Error_Reporting(E_ALL & ~E_NOTICE); 
 
   if($titlepage == "") $titlepage = "Добавление новости";
-  $textLink1 = htmlspecialchars ('<iframe src="ВАША ССЫЛКА" style="width:100%; height:600px; padding: 0 0 0 0;" frameborder="0"></iframe>');
-  $textLink2 = htmlspecialchars ('<iframe src="https://docs.google.com/document/d/1zkOJMfCnjNxA1tQxp6j7SRDbBhgx_ratg4if0p5Zuvk/pub?embedded=true" style="width:100%; height:600px; padding: 0 0 0 0;" frameborder="0"></iframe>');
+  $textLink0 = htmlspecialchars ('<iframe src="');
+  $textLink1 = htmlspecialchars ('"style="width:100%; height:600px; padding: 0 0 0 0;" frameborder="0"></iframe>');
+  $textLink2 = htmlspecialchars ('https://docs.google.com/document/d/1zkOJMfCnjNxA1tQxp6j7SRDbBhgx_ratg4if0p5Zuvk/pub?embedded=true" style="width:100%; height:600px; padding: 0 0 0 0;" frameborder="0"></iframe>');
   $helppage='
   "<b>Название</b>"- Название новости.<br> 
   "<b>Содержание</b>" - Ткст новости, который будет отодражаться на главной странице.<br> 
-  <b>Ссылка:</b><br>"<b>'.$textLink1.'</b>".<br>
-  Скопируйте данный код и вмеcто "ВАША ССЫЛКА" впишите адрес ссылки на гугл документ. Для того, чтобы убрать рамки в после ссылки добавьте "?embedded=true".<br>
-  Например:<br>"<b>'.$textLink2.'</b>".<br>
+  <b>Ссылка:</b><br><br>
+  <i>'.$textLink0."<b>ВАША ССЫЛКА</b>".$textLink1.'</i>.<br><br>
+  Скопируйте данный код и вмеcто "ВАША ССЫЛКА" впишите адрес ссылки на гугл документ. Для того, чтобы убрать рамки гугл документа, после ссылки добавьте "?embedded=true".<br>
+  Например:<br><br>
+  <i>'.$textLink0.$textLink2.'</i>.<br><br>
   <b>Отображать</b> - сняв или установив переключатель вы можете управлять выводом данной новости на сайте. Скрыть ее или отобразить.
   ';
   include "../util/topadmin.php";

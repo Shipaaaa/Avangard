@@ -1,0 +1,43 @@
+php_value upload_max_filesize 256M
+php_value post_max_size 256M
+php_value magic_quotes_gpc Off
+RewriteEngine On
+#job-module-rules-start
+#/job/?op=vacancy&id={element.vacancy_id}
+RewriteRule ^job-(.+)\.html$ /index.php?se=job&op=vacancy&id=$1 [L,NS,QSA]
+RewriteRule ^resume-(.+)\.html$ /index.php?se=job&op=resume&id=$1 [L,NS,QSA]
+RewriteRule (.+/job/|.+/resume/)([0-9]+)/?$ /index.php?rw_url=$1&category_id=$2 [L,NS,QSA]
+#job-module-rules-end
+#RewriteCond %{REQUEST_FILENAME} (.*)cars2(.*) /$1/modules/cars2$2
+#standart rules
+RewriteCond %{REQUEST_URI} ^/img/(.+)
+RewriteRule ^img/(.+) /local/cache/%{HTTP_HOST}/$1 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^local/cache/(.+) /pic.php?rw_src=$1 [L,NS,QSA]
+
+RewriteCond %{REQUEST_URI} ^/pic/(.+)
+RewriteRule ^pic/(.+) /pic.php?src=$1 [L,NS,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^files/([0-9]+) /getfile.php?id=$1 [L,NS,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.(swf)|(jpg)|(jpeg)|(png)|(gif)|(css)|(ico)|(flv)$
+RewriteCond %{REQUEST_FILENAME} !.*modules/cars2
+RewriteRule ^(.+)/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$ /index.php?rw_url=$1&rw_date[year]=$2&rw_date[mon]=$3&rw_date[mday]=$4 [L,NS,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.(swf)|(jpg)|(jpeg)|(png)|(gif)|(css)|(ico)|(flv)$
+RewriteCond %{REQUEST_FILENAME} !.*modules/cars2
+RewriteRule ^(.+)/term/(.+)/?$ /index.php?rw_url=$1&rw_term=$2 [L,NS,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.(swf)|(jpg)|(jpeg)|(png)|(gif)|(css)|(ico)|(flv)$
+RewriteCond %{REQUEST_FILENAME} !.*modules/cars2
+RewriteRule ^(.+) /index.php?rw_url=$1 [L,NS,QSA]
+# Don't loop.
+#RewriteCond %{ENV:REDIRECT_STATUS} !^$
+#RewriteRule .* — [L]

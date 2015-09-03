@@ -43,7 +43,7 @@ p.linkr{ text-align: right; font-family: Arial, Helvetica, sans-serif;font-size:
 }
 .main{
 	padding-top: 0px; 
-	min-height: 100%;
+	min-height: 600px;
 	font-size: 18px;
 	font-family: "Arial Narrow";
 	color: rgb(177, 55, 117);

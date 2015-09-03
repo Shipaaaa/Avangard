@@ -3,13 +3,13 @@
 
   // Имя сервера базы данных, например $dblocation = "mysql28.noweb.ru"
   // сейчас выставлен сервер локальной машины
-  $dblocation = "mysql.hostinger.ru";
+  $dblocation = "mysqlhost";
   // Имя базы данных, на хостинге или локальной машине
-  $dbname = "u830224203_news";
+  $dbname = "news";
   // Имя пользователя базы данных
-  $dbuser = "u830224203_admin";
+  $dbuser = "avan_news";
   // Пароль
-  $dbpasswd = "15976412";
+  $dbpasswd = "avangard123";
   // Количество новостей, выводимых в анонсе
   $pnumber = 150;
   // Количество символов в одном аносе новостей

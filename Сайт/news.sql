@@ -8,5 +8,5 @@ CREATE TABLE news (
   url_pict tinytext NOT NULL,
   hide enum('show','hide') NOT NULL default 'show',
   PRIMARY KEY  (id_news)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 INSERT INTO news VALUES (1, 'Первая новость', 'Заработала система новостей.', '2004-06-24 23:39:06', 'сайт', 'сайт', '', 'show');

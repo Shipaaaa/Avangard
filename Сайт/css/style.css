@@ -345,6 +345,7 @@ html, body{height: 100%;}
 }
 
 #nav li a:hover{
+	cursor: pointer;
 	color:#000;
 	background:#DDE0F7;
 	/*text-decoration:underline;*/
@@ -361,6 +362,7 @@ html, body{height: 100%;}
 #menu_c{
     padding: 10px 65px 10px 62px;
 }
+
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
 #nav ul{
 /*	list-style-image: url("/images/menuClick.png");
@@ -383,9 +385,9 @@ html, body{height: 100%;}
 #nav ul a{
 	font-family: 'MyriadProRegular';
 	font-size:1em;
-	padding-left: 50px;
-	padding-top: 30px;
-	padding-bottom: 25px;
+	padding-left: 55px;
+	padding-top: 33px;
+	padding-bottom: 22px;
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
 	display:block;
 	color:#2F3638;
@@ -394,19 +396,23 @@ html, body{height: 100%;}
 	background-size: 320px auto !important;
 }
 #nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	cursor: pointer;
 	left:0; /* Приносим его обратно на экран, когда нужно */
 	opacity:1; /* Делаем непрозрачным */
 }
 #nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+	cursor: pointer;
 	color:#000;
 	background:#DDE0F7;
 	/*text-decoration:underline;*/
 }
 #nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+	cursor: pointer;
 	text-decoration:none;
 	-webkit-transition:-webkit-transform 0.075s linear;
 }
 #nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+	cursor: pointer;
 	background: url(../images/menuBGClick.png) no-repeat;
 	background-size: 320px auto;
 	/*background:rgba(242,244,243,0.75); /* Будет полупрозрачным */*/

@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 	<!-- the jScrollPane script -->
 	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.codrops1.css" />
 	<script type="text/javascript" src="js/scroll-startstop.events.jquery.js"></script>
 	<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-5.2.3-packed.js"></script>
 	<script type="text/javascript" language="javascript">
@@ -398,8 +399,12 @@
 					<hr>
 					<div id="carousel">
 						<ul>
+							<!-- Сюда вставляется афиша -->
+							<!-- Пример: <li><img src="images/afisha/НАЗВАНИЕ ВАШЕЙ КАРТИНКИ"/><a class="example-image-link" href="images/afisha/НАЗВАНИЕ ВАШЕЙ КАРТИНКИ" data-lightbox="example-set"></a></li> -->
+
 							<li><img src="images/afisha/afisha.png"/><a class="example-image-link" href="images/afisha/afisha.png" data-lightbox="example-set"></a></li>
-							<li><img src="images/afisha/day_jam.png"/><a class="example-image-link" href="images/afisha/day_jam.png" data-lightbox="example-set"></a></li>			
+							<li><img src="images/afisha/day_jam.png"/><a class="example-image-link" href="images/afisha/day_jam.png" data-lightbox="example-set"></a></li>
+                                                        <li><img src="images/afisha/otkrinie.PNG"/><a class="example-image-link" href="images/afisha/otkrinie.PNG" data-lightbox="example-set"></a></li>
 						</ul>
 						<div class="clearfix"></div>
 						<!-- <a id="prev" class="prev" href="#">&lt;</a>
@@ -431,7 +436,7 @@
 		                	<TD><a href="https://docs.google.com/document/d/1O5e0wEjlIniErTEPYS7YrXaFBvnsRhMrZ5GeZtiB1H8/pub"><img src="images/ico1.png"/></a></TD> <TD class="timetableBG"><a href="https://docs.google.com/document/d/1O5e0wEjlIniErTEPYS7YrXaFBvnsRhMrZ5GeZtiB1H8/pub">РАСПИСАНИЕ ЗАНЯТИЙ</a></TD>
 				        </TR>
 				         <TR>
-		                	<TD><a href="https://docs.google.com/document/d/1vofWUNNQAJjUYM-4ALGEtJsSQT9upmmIy9hYzdHcUZY/pub"><img src="images/ico2.png"/></a></TD> <TD class="timetableBG"><a href="https://docs.google.com/document/d/1vofWUNNQAJjUYM-4ALGEtJsSQT9upmmIy9hYzdHcUZY/pub">ПРЕЙСКУРАНТ ЦЕН</a></TD>
+		                	<TD><a href="https://docs.google.com/document/d/1vofWUNNQAJjUYM-4ALGEtJsSQT9upmmIy9hYzdHcUZY/pub"><img src="images/ico2.png"/></a></TD> <TD class="timetableBG"><a href="https://docs.google.com/document/d/1vofWUNNQAJjUYM-4ALGEtJsSQT9upmmIy9hYzdHcUZY/pub">ПРЕЙСКУРАНТ</a></TD>
 				        </TR>
 				         <TR>
 		                	<TD><a href="https://docs.google.com/forms/d/1CvDgOpGw93xBfA9GYmAvjNeysA1JK6EUaMXQRk4iRWE/viewform?c=0&w=1"><img src="images/ico3.png"/></a></TD> <TD class="timetableBG"><a href="https://docs.google.com/forms/d/1CvDgOpGw93xBfA9GYmAvjNeysA1JK6EUaMXQRk4iRWE/viewform?c=0&w=1">ОН-ЛАЙН ЗАПИСЬ</a></TD>
@@ -443,7 +448,9 @@
 					<hr>
 					<div id="carousel1">
 						<ul>
-							
+							<!-- Сюда вставляется партнер -->
+							<!-- Пример: <li><img src="images/partners/ЛОГОТИП ПАРТНЕРА"/><a href="ССЫЛКА НА САЙТ ПАРТНЕРА">Image1</a></li> -->
+
 							<li><img src="images/partners/logos.png"/><a href="http://kultura.mos.ru/">Image1</a></li>
 							<li><img src="images/partners/uao.png"/><a href="http://uao.mos.ru/">Image1</a></li>
 							<li><img src="images/partners/ugorexovo.png"/><a href="http://orehovo-borisovo-juzhnoe.mos.ru/">Image1</a></li>
